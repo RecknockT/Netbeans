@@ -23,28 +23,23 @@ public class Extra6 {
                 
             } else {
                 System.out.println("Fuera de rango");
+                do {
+                    System.out.println("Ingrese nuevamente una palabra dentro del rango");
+                     pa = leer.next();
+                } while (pa.length() < 3 || pa.length() > 5);
+                pala[i] = pa;
             }
             
         }
         
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
-                sopa[i][j] = Integer.toString(rnd.nextInt());
+                sopa[i][j] = Integer.toString(0);
                 
                 
                 
             }
         }
-        for (int i = 0; i < 20; i++) {
-            for (int j = 0; j < 20; j++) {
-                sopa[rnd.nextInt(20)][rnd.nextInt(20)] = pala[i].substring(j, j+1);
-                System.out.print(sopa[i][j]);
-                
-                
-            }
-            System.out.println("");
-        }
-        
         
     }
 
