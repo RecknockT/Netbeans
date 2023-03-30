@@ -37,7 +37,7 @@ public class Extra6 {
         }
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
-                sopa[rnd.nextInt(20)][0] = pala[i].substring(j,j+1);
+                sopa[rnd.nextInt(20)][rnd.nextInt(20)] = pala[i].substring(j, j+1);
                 System.out.print(sopa[i][j]);
                 
                 
